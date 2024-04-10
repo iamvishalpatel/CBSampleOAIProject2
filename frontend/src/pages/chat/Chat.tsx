@@ -106,12 +106,12 @@ const Chat = () => {
             return;
         }*/ //disabled for auth_enabled false
         const userInfoList = await getUserInfo();
-        if (userInfoList.length === 0 && window.location.hostname !== "127.0.0.1") {
+        /*if (userInfoList.length === 0 && window.location.hostname !== "127.0.0.1") {
             setShowAuthMessage(true);
         }
         else {
             setShowAuthMessage(false);
-        }
+        }*/
     }
 
     let assistantMessage = {} as ChatMessage
